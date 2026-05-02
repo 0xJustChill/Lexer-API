@@ -1,0 +1,8 @@
+# ChillLexer sample grammar
+IDENT      @Ident
+INT        @Int
+KW_IF      "if"
+OP_EQ      ==
+OP_PLUS    "+"
+WHITESPACE \s+      skip
+COMMENT    //.*     skip
