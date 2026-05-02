@@ -205,10 +205,10 @@ if __name__ == "__main__":
                     fn(Path(d))
             else:
                 fn()
-            print(f"  ✅ {name}")
+            print(f"  [OK] {name}")
             passed += 1
         except Exception as e:
-            print(f"  ❌ {name}: {e}")
+            print(f"  [KO] {name}: {e}")
             traceback.print_exc()
             failed += 1
     print(f"\n{passed} passed, {failed} failed")
